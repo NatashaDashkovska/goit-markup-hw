@@ -3,7 +3,7 @@
   --main-title-color: #ffffff;
   --title-color: #212121;
   --accent-color: #2196f3;
-  --primary-background-color: #e5e5e5;
+  --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --footer-links-color: #rgba(255, 255, 255, 0.6);
@@ -11,6 +11,7 @@
 
 body {
   font-family: Roboto, sans-serif;
+  background-color: var(--primary-background-color);
 }
 
 /* Header */
@@ -144,6 +145,9 @@ body {
 }
 
 /* Team */
+.team-section {
+  background-color: var(--secondary-background-color);
+}
 
 .team-section__title {
   font-weight: bold;
@@ -177,4 +181,48 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-logo__part {
+  color: var(--main-title-color);
+}
+
+.adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-title-color);
+}
+
+.contact {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 }
