@@ -101,6 +101,7 @@ body {
 
   background-color: var(--accent-color);
   color: var(--main-title-color);
+  cursor: pointer;
 }
 
 /* Advantages */
@@ -225,4 +226,61 @@ body {
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.btn-section__list {
+  list-style-type: none;
+}
+
+.btn-section__list .btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.btn-section__list .btn:focus,
+.btn-section__list .btn:hover {
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
+}
+
+.portfolio-list {
+  list-style-type: none;
+}
+.portfolio-list__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+
+.portfolio-list__text {
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
 }
