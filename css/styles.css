@@ -50,8 +50,6 @@ h6 {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  outline: 1px solid tomato;
 }
 
 /* Header */
@@ -150,7 +148,7 @@ h6 {
 /* Hero section */
 
 .hero-section {
-  background-color: darkslategrey;
+  background-color: #2f303a;
   display: flex;
 }
 
@@ -196,7 +194,6 @@ h6 {
 
 /* Advantages */
 .advantages {
-  background-color: chartreuse;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -239,7 +236,6 @@ h6 {
 
 /* Tasks */
 .tasks {
-  background-color: blue;
   padding-bottom: 94px;
 }
 
@@ -260,7 +256,7 @@ h6 {
 }
 
 .task > img {
-  display: inline-block;
+  display: block;
 }
 
 .task:not(:last-child) {
@@ -285,8 +281,7 @@ h6 {
   width: calc((100%-3 * 30px) / 4);
   padding-bottom: 30px;
 
-  background: #ffffff;
-  /* material shadow v1 */
+  background: var(--main-title-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -335,7 +330,7 @@ h6 {
 }
 
 .team-item > img {
-  display: inline-block;
+  display: block;
 }
 
 /* Footer */
@@ -401,9 +396,17 @@ h6 {
 
 .btn-section__list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  padding-top: 100px;
 }
 
 .btn-section__list .btn {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -413,12 +416,16 @@ h6 {
 
   color: var(--title-color);
 
-  background: #f5f4fa;
+  background: var(--secondary-background-color);
   border-radius: 4px;
   border: none;
   outline: none;
 
   cursor: pointer;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .btn-section__list .btn:focus,
@@ -429,7 +436,33 @@ h6 {
 
 .portfolio-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
+
+.portfolio-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-item > img {
+  display: block;
+}
+
+.border {
+  background: var(--main-title-color);
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  padding: 20px 24px;
+}
+
 .portfolio-list__title {
   font-weight: bold;
   font-size: 18px;
@@ -441,6 +474,9 @@ h6 {
 }
 
 .portfolio-list__text {
+  margin-top: 4px;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.87;
 
