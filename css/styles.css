@@ -344,7 +344,7 @@ h6 {
 
 .team_item__description {
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -356,6 +356,41 @@ h6 {
 
 .team-item > img {
   display: block;
+}
+
+.contacts-icons {
+  display: flex;
+  list-style: none;
+  padding: 0px 32px;
+}
+
+.contacts-icon_link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.contacts-icon_link:hover,
+.contacts-icon_link:focus {
+  background-color: var(--accent-color);
+}
+
+.contacts-icon_link:hover .contacts-icon,
+.contacts-icon_link:focus .contacts-icon {
+  fill: var(--main-title-color);
+}
+
+.contacts-icons > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contacts-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 /* Footer */
