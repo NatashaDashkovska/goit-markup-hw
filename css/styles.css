@@ -132,13 +132,24 @@ h6 {
 }
 
 .contacts-nav__item a {
+  display: block;
   text-decoration: none;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.contacts-nav__item a:hover,
-.contacts-nav__item a:focus {
+.contacts-nav__item svg {
+  margin-right: 10px;
+  vertical-align: bottom;
+  max-height: 16px;
+  max-width: 16px;
+}
+
+.contacts-nav__item :hover,
+.contacts-nav__item :focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contacts-nav__item:not(:first-child) {
