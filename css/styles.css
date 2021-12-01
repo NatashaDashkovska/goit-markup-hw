@@ -19,6 +19,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 h1,
@@ -352,7 +353,7 @@ h6 {
 
 .contacts-icons {
   display: flex;
-  list-style: none;
+
   padding: 0px 32px;
 }
 
@@ -394,7 +395,7 @@ h6 {
 
 .clients {
   display: flex;
-  list-style: none;
+
   margin-top: 50px;
 }
 
@@ -435,6 +436,7 @@ h6 {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 .footer-logo {
@@ -483,6 +485,42 @@ h6 {
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-appeal {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-appeal__title {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-title-color);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon > svg {
+  fill: var(--main-title-color);
+}
+
+.footer-icons > li:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Portfolio */
