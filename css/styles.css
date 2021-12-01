@@ -50,6 +50,7 @@ h6 {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid red;
 }
 
 /* Header */
@@ -252,6 +253,7 @@ h6 {
   padding: 25px 100px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
+  border-radius: 4px;
 }
 
 .icon > svg {
@@ -264,7 +266,7 @@ h6 {
   padding-bottom: 94px;
 }
 
-.task-section__title {
+.section-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -311,16 +313,6 @@ h6 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-section__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-color);
 }
 
 .team-list {
@@ -391,6 +383,47 @@ h6 {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+/* Clients */
+
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.client-logo {
+  width: 170px;
+  height: 92px;
+  outline: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.client-logo:not(:last-child) {
+  margin-right: 30px;
+}
+
+.logo-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.client-logo:hover,
+.client-logo:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.client-logo:hover .logo-icon,
+.client-logo:focus .logo-icon {
+  fill: var(--accent-color);
 }
 
 /* Footer */
