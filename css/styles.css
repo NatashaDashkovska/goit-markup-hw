@@ -7,6 +7,7 @@
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --footer-links-color: #rgba(255, 255, 255, 0.6);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -106,6 +107,8 @@ h6 {
 
   text-decoration: none;
   color: var(--title-color);
+
+  transition: color 250ms var(--cubic);
 }
 
 .nav-item a:hover,
@@ -145,6 +148,8 @@ h6 {
   vertical-align: bottom;
   max-height: 16px;
   max-width: 16px;
+
+  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
 .contacts-nav__item :hover,
@@ -301,6 +306,34 @@ h6 {
   margin-right: 30px;
 }
 
+.task-thumb {
+  position: relative;
+}
+
+.thumb-text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-title-color);
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 /* Team */
 .team-section {
   background-color: var(--secondary-background-color);
@@ -374,6 +407,8 @@ h6 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  transition: background-color 250ms var(--cubic);
 }
 
 .contacts-icon_link:hover,
@@ -394,6 +429,7 @@ h6 {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms var(--cubic);
 }
 
 /* Clients */
@@ -415,6 +451,8 @@ h6 {
   outline: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
+
+  transition: outline 250ms var(--cubic);
 }
 
 .client-logo:not(:last-child) {
@@ -425,6 +463,8 @@ h6 {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+
+  transition: fill 250ms var(--cubic);
 }
 
 .client-logo:hover,
@@ -490,6 +530,8 @@ h6 {
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
+
+  transition: color 250ms var(--cubic);
 }
 
 .contact:hover,
@@ -563,6 +605,9 @@ h6 {
   outline: none;
 
   cursor: pointer;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .btn-item:not(:last-child) {
@@ -595,6 +640,10 @@ h6 {
 
 .portfolio-item > img {
   display: block;
+}
+
+.portfolio-item {
+  transition: box-shadow 250ms var(--cubic);
 }
 
 .portfolio-item:hover,
