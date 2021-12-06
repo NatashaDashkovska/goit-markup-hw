@@ -55,7 +55,7 @@ h6 {
 }
 
 /* Header */
-.header {
+.header-outline {
   border-bottom: 1px solid #ececec;
 }
 
@@ -160,6 +160,17 @@ h6 {
 
 .contacts-nav__item:not(:first-child) {
   margin-left: 50px;
+}
+
+.active::after {
+  content: '';
+  display: block;
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: -4px;
+  margin-bottom: 0px;
 }
 
 /* Hero section */
@@ -681,4 +692,35 @@ h6 {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img__text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms var(--cubic);
+}
+
+.portfolio-item:hover .portfolio-img__text,
+.portfolio-item:focus .portfolio-img__text {
+  transform: translateY(-100%);
 }
