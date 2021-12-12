@@ -353,7 +353,7 @@
     </main>
     <footer class="footer-color">
       <div class="container footer">
-        <div class="a">
+        <div class="">
           <a class="footer-logo" href="./index.html"
             >Web<span class="footer-logo__part">Studio</span>
           </a>
@@ -399,12 +399,31 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form_block">
+          <p class="footer-appeal__title">Подпишитесь на рассылку</p>
+          <form class="footer-form">
+            <label for="footer-email"></label>
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="footer-btn">
+              Подписаться
+              <svg>
+                <use href="./images/svg/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- Модальное окно -->
-    <!-- <div class="backdrop is-hidden" data-modal> -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close>
           <svg>
@@ -478,7 +497,7 @@
               id="agreement"
             />
             <span class="agreement-icon"></span>
-            <label class="agreement" for="agreement"></label>
+
             Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
           </label>
           <button class="btn form-btn" type="submit">Отправить</button>

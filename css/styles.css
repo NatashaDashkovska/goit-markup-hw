@@ -590,6 +590,61 @@ h6 {
   margin-right: 10px;
 }
 
+.footer-form_block {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  width: 358px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 4px;
+  background-color: var(--footer-background-color);
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  transition: border 250ms var(--cubic);
+}
+
+.footer-input:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: 0;
+}
+
+.footer-btn {
+  display: flex;
+  padding: 10px 29px;
+  margin-right: 0;
+  margin-left: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
+  cursor: pointer;
+  border-color: transparent;
+
+  border-radius: 4px;
+}
+
+.footer-btn > svg {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--main-title-color);
+}
+
 /* Portfolio */
 
 .btn-section__list {
