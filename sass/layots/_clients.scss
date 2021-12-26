@@ -1,0 +1,42 @@
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients {
+  margin-top: 50px;
+
+  display: flex;
+}
+
+.client-logo {
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  outline: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: outline 250ms $cubic;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $accent-color;
+  }
+
+  &:hover .logo-icon,
+  &:focus .logo-icon {
+    fill: $accent-color;
+  }
+}
+
+.logo-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: #afb1b8;
+  transition: fill 250ms $cubic;
+}

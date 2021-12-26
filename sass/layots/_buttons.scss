@@ -1,0 +1,44 @@
+.btn-section__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  padding-top: 100px;
+}
+
+.btn-section__list .btn {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-color;
+
+  background: $secondary-background-color;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: background-color 250ms $cubic, color 250ms $cubic,
+    box-shadow 250ms $cubic;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-section__list .btn:focus,
+.btn-section__list .btn:hover {
+  background-color: $accent-color;
+  color: $main-white-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
