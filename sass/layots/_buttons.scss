@@ -1,14 +1,21 @@
-.btn-section__list {
-  list-style-type: none;
+.btn-navigation--list {
   display: flex;
   justify-content: center;
+
+  & .btn:focus,
+  & .btn:hover {
+    background-color: $accent-color;
+    color: $main-white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
-.navigation {
+.btn-navigation {
   padding-top: 100px;
 }
 
-.btn-section__list .btn {
+.btn {
   padding: 6px 22px;
 
   font-weight: 500;
@@ -31,14 +38,6 @@
     box-shadow 250ms $cubic;
 }
 
-.btn-item:not(:last-child) {
+.btn-navigation--item:not(:last-child) {
   margin-right: 8px;
-}
-
-.btn-section__list .btn:focus,
-.btn-section__list .btn:hover {
-  background-color: $accent-color;
-  color: $main-white-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
