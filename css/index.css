@@ -354,8 +354,7 @@ template {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../../fonts/raleway_700.woff2) format("woff2");
-  src: url(../../fonts/raleway_700.woff) format("woff");
+  src: url(../../fonts/raleway_700.woff2) format("woff2"), url(../../fonts/raleway_700.woff) format("woff");
 }
 
 /* cyrillic */
@@ -364,8 +363,7 @@ template {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../../fonts/roboto_400.woff2) format("woff2");
-  src: url(../../fonts/roboto_400.woff) format("woff");
+  src: url(../../fonts/roboto_400.woff2) format("woff2"), url(../../fonts/roboto_400.woff) format("woff");
 }
 
 /* cyrillic */
@@ -374,8 +372,7 @@ template {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(../../fonts/roboto_500.woff2) format("woff2");
-  src: url(../../fonts/roboto_500.woff) format("woff");
+  src: url(../../fonts/roboto_500.woff2) format("woff2"), url(../../fonts/roboto_500.woff) format("woff");
 }
 
 /* cyrillic */
@@ -384,8 +381,7 @@ template {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../../fonts/roboto_700.woff2) format("woff2");
-  src: url(../../fonts/roboto_700.woff) format("woff");
+  src: url(../../fonts/roboto_700.woff2) format("woff2"), url(../../fonts/roboto_700.woff) format("woff");
 }
 
 /* cyrillic */
@@ -394,8 +390,7 @@ template {
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(../../fonts/roboto_900.woff2) format("woff2");
-  src: url(../../fonts/roboto_900.woff) format("woff");
+  src: url(../../fonts/roboto_900.woff2) format("woff2"), url(../../fonts/roboto_900.woff) format("woff");
 }
 
 body {
