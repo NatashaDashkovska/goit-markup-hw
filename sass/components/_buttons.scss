@@ -1,21 +1,23 @@
-.btn {
-  padding: 10px 32px;
+.btn--burger {
+  padding: 0;
+  display: inline-flex;
+  background-color: $main-white-color;
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
 
-  text-align: center;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
 
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  //   background-color: $main-white-color;
+  //   border: 1px solid rgba(0, 0, 0, 0.1);
+  //   border-radius: 50%;
 
-  background-color: $accent-color;
-  color: $main-white-color;
-  cursor: pointer;
-  border-color: transparent;
-  border-radius: 4px;
-
-  &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:active {
+    fill: $accent-color;
   }
 }

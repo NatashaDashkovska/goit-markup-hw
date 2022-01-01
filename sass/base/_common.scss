@@ -37,14 +37,6 @@ a {
   margin: -1px;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .section-title {
   font-weight: bold;
   font-size: 36px;
@@ -54,6 +46,7 @@ a {
 
   color: $title-color;
 }
+
 img {
   display: block;
   max-width: 100%;
