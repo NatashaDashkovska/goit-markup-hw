@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.modal--title {
+.modal__title {
   margin-bottom: 12px;
   margin-top: 0;
 
@@ -15,7 +15,7 @@
   color: $title-color;
 }
 
-.modal--input {
+.modal__input {
   width: 100%;
   padding: 11px 12px 11px 42px;
   margin-top: 4px;
@@ -34,7 +34,7 @@
   }
 }
 
-.modal--label {
+.modal__label {
   position: relative;
   margin-bottom: 10px;
 
@@ -48,7 +48,7 @@
   color: $primary-text-color;
 }
 
-.modal--icon {
+.modal__icon {
   position: absolute;
   left: 12px;
   top: 28px;

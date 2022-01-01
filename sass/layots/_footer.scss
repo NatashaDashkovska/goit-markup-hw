@@ -23,11 +23,11 @@
   text-decoration: none;
 }
 
-.footer-logo__part {
+.footer-logo--part {
   color: $main-white-color;
 }
 
-.footer--adress {
+.footer__adress {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -36,7 +36,7 @@
   color: $main-white-color;
 }
 
-.footer--contact {
+.footer__contact {
   margin-top: 9px;
 
   display: inline-block;
@@ -64,7 +64,7 @@
   padding-top: 12px;
 }
 
-.footer-appeal--title {
+.footer-appeal__title {
   margin-top: 0;
   margin-bottom: 20px;
 

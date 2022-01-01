@@ -1,4 +1,4 @@
-.btn-navigation--list {
+.btn-navigation__list {
   display: flex;
   justify-content: center;
 
@@ -38,6 +38,6 @@
     box-shadow 250ms $cubic;
 }
 
-.btn-navigation--item:not(:last-child) {
+.btn-navigation__item:not(:last-child) {
   margin-right: 8px;
 }

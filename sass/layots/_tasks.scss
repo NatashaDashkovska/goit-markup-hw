@@ -2,17 +2,17 @@
   padding-bottom: 94px;
 }
 
-.tasks--list {
+.tasks__list {
   margin-top: 50px;
 
   display: flex;
 }
 
-.tasks--img {
+.tasks__img {
   display: block;
 }
 
-.tasks--item {
+.tasks__item {
   position: relative;
 
   &:not(:last-child) {
@@ -20,7 +20,7 @@
   }
 }
 
-.tasks--img__text {
+.tasks__img--text {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 27px;

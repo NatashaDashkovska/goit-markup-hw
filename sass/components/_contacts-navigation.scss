@@ -12,7 +12,7 @@
   color: $primary-text-color;
 }
 
-.contacts-navigation--link {
+.contacts-navigation__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -21,7 +21,7 @@
   color: $primary-text-color;
 }
 
-.contacts-navigation--item svg {
+.contacts-navigation__item svg {
   margin-right: 10px;
   vertical-align: bottom;
   max-height: 16px;
@@ -30,12 +30,12 @@
   transition: color 250ms $cubic, fill 250ms $cubic;
 }
 
-.contacts-navigation--item :hover,
-.contacts-navigation--item :focus {
+.contacts-navigation__item :hover,
+.contacts-navigation__item :focus {
   color: $accent-color;
   fill: $accent-color;
 }
 
-.contacts-navigation--item:not(:first-child) {
+.contacts-navigation__item:not(:first-child) {
   margin-left: 50px;
 }

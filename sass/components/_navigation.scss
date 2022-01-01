@@ -11,7 +11,7 @@
   color: $title-color;
 }
 
-.navigation--link {
+.navigation__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -27,7 +27,7 @@
   }
 }
 
-.navigation--item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 

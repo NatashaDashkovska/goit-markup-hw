@@ -1,4 +1,4 @@
-.portfolio--list {
+.portfolio__list {
   padding-top: 50px;
   padding-bottom: 94px;
 
@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 
-.portfolio--item {
+.portfolio__item {
   transition: box-shadow 250ms $cubic;
 
   &:not(:nth-last-child(-n + 3)) {
@@ -23,17 +23,17 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:hover .img--text,
-  &:focus .img--text {
+  &:hover .img__text,
+  &:focus .img__text {
     transform: translateY(-100%);
   }
 }
 
-.portfolio--item > img {
+.portfolio__item > img {
   display: block;
 }
 
-.portfolio__border {
+.portfolio--border {
   padding: 20px 24px;
 
   background: $main-white-color;
@@ -42,7 +42,7 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.portfolio-list--title {
+.portfolio-list__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -51,7 +51,7 @@
   color: $title-color;
 }
 
-.portfolio-list--text {
+.portfolio-list__text {
   margin-top: 4px;
   margin-bottom: 0;
 
@@ -67,7 +67,7 @@
   overflow: hidden;
 }
 
-.img--text {
+.img__text {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
