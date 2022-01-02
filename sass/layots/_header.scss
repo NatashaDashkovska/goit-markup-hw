@@ -2,6 +2,11 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header {
+.header-area {
   padding: 16px 23px 16px 15px;
+
+  @include for-size(tablet) {
+    display: flex;
+    padding: 0px 15px;
+  }
 }

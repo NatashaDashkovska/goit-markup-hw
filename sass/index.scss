@@ -1,9 +1,10 @@
 @import './utils/normalize';
 @import './base/fonts';
+@import './utils/mixins';
 @import './base/container';
 @import './utils/variables';
 @import './base/common';
-@import './utils/mixins';
+
 @import './layots/header';
 @import './components/logo';
 @import './components/navigation';
@@ -11,3 +12,4 @@
 @import './components/buttons';
 @import './components/icons';
 @import './components/mobile-menu';
+@import './components/menu_links';

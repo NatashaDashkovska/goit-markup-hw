@@ -1,23 +1,23 @@
 .btn--burger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+
   padding: 0;
+
   display: inline-flex;
+
   background-color: $main-white-color;
   border: none;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   background-color: $main-white-color;
-  //   border: 1px solid rgba(0, 0, 0, 0.1);
-  //   border-radius: 50%;
 
   &:active {
     fill: $accent-color;
+  }
+
+  @include for-size(tablet) {
+    display: none;
   }
 }
