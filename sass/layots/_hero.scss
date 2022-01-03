@@ -1,0 +1,106 @@
+.hero-section {
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../../images/hero/hero-480.jpg');
+  background-size: 480px 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(47, 48, 58, 0.1);
+
+  @include for-size(phone) {
+    max-width: 480px;
+    max-height: 400px;
+  }
+
+  @include for-size(tablet) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero/hero-768.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @include for-size(desktop) {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero/hero-1200.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero/hero-480@2x.jpg');
+  }
+
+  @include for-size(tablet) {
+    .hero-section {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../../images/hero/hero-768@2x.jpg');
+    }
+  }
+
+  @include for-size(desktop) {
+    .hero-section {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../../images/hero/hero-1200@2x.jpg');
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 115px;
+  @include for-size(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero-title {
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $main-white-color;
+}
