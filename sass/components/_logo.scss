@@ -10,6 +10,7 @@
   @include for-size(tablet) {
     margin-top: 26px;
     margin-right: 88px;
+    margin-bottom: 26px;
   }
 
   @include for-size(desktop) {
