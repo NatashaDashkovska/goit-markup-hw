@@ -1084,4 +1084,52 @@ img {
         flex-wrap: nowrap;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .tasks-section {
+    display: none;
+  }
+}
+
+.tasks {
+  padding-bottom: 94px;
+}
+
+.tasks__list {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tasks__img {
+  display: block;
+}
+
+.tasks__item {
+  position: relative;
+}
+
+.tasks__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.tasks__img--text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /*# sourceMappingURL=index.css.map */
