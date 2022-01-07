@@ -31,3 +31,43 @@
   width: 70px;
   height: 70px;
 }
+
+.contacts-icons {
+  justify-content: center;
+  margin-top: 16px;
+
+  display: flex;
+}
+
+.contacts-icon__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .contacts-icon,
+  &:focus .contacts-icon {
+    fill: $main-white-color;
+  }
+}
+
+.contacts-icons > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contacts-icon {
+  width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
+  transition: fill 250ms $cubic;
+}

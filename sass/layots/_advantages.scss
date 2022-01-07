@@ -9,6 +9,7 @@
 
 .advantages-list__title {
   margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
 
   font-weight: bold;
@@ -46,26 +47,26 @@
   @include for-size(tablet) {
     width: 354px;
 
-    &:not(:last-child) {
-      //   margin-right: 30px;
-      margin-bottom: 0;
+    &:nth-child(-n + 2) {
+     
+      margin-bottom: 30px;
     }
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
   }
 
-  @include for-size(tablet) {
-    width: 354px;
+  // @include for-size(tablet) {
+  //   width: 354px;
 
-    &:not(:last-child) {
-      //   margin-right: 30px;
-      margin-bottom: 0;
-    }
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
-  }
+  //   &:not(:last-child) {
+  //     //   margin-right: 30px;
+  //     margin-bottom: 0;
+  //   }
+  //   &:nth-child(2n + 1) {
+  //     margin-right: 30px;
+  //   }
+  // }
 
   @include for-size(desktop) {
     margin-right: 30px;

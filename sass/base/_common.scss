@@ -15,7 +15,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -39,12 +40,19 @@ a {
 
 .section-title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $title-color;
+
+  @include for-size(desktop) {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 img {

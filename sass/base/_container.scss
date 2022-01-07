@@ -6,7 +6,7 @@
   margin-left: auto;
 
   @include for-size(phone) {
-    max-width: 480px;
+    width: 480px;
   }
 
   @include for-size(tablet) {

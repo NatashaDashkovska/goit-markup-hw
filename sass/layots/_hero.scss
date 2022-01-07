@@ -10,7 +10,7 @@
   background-position: center;
   background-color: rgba(47, 48, 58, 0.1);
 
-  @include for-size(phone) {
+  @media screen and (max-width: 480px) {
     max-width: 480px;
     max-height: 400px;
   }
