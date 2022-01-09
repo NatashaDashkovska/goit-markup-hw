@@ -1,0 +1,181 @@
+.footer-color {
+  background-color: $footer-background-color;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 89px 60px 76px;
+    justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    padding: 60px 15px;
+    justify-content: start;
+    text-align: start;
+  }
+}
+
+.footer-contacts {
+  @include for-size(tablet) {
+    width: 232px;
+    margin-right: 165px;
+  }
+  @include for-size(desktop) {
+    width: 231px;
+    margin-right: 70px;
+  }
+}
+
+.footer__adress {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $main-white-color;
+}
+
+.footer__adress li {
+  margin-top: 8px;
+  @include for-size(desktop) {
+    margin-top: 9px;
+  }
+}
+
+.footer__contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-appeal {
+  margin-top: 60px;
+  @include for-size(tablet) {
+    margin-top: 0;
+    padding-top: 5px;
+  }
+  @include for-size(desktop) {
+    margin-right: 93px;
+    padding-top: 15px;
+  }
+}
+
+.footer-appeal__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $main-white-color;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-form_block {
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    padding-top: 12px;
+  }
+}
+
+.footer-form {
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-input {
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: $main-white-color;
+  background-color: $footer-background-color;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border 250ms $cubic;
+
+  &:focus-within {
+    border: 1px solid $accent-color;
+    outline: 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 352px;
+  }
+}
+
+.footer-btn {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
+  display: flex;
+  padding: 10px 29px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: $accent-color;
+  color: $main-white-color;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 4px;
+
+  & > svg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: $main-white-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-left: 12px;
+    margin-top: 0;
+  }
+}

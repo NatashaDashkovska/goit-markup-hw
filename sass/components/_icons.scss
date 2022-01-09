@@ -71,3 +71,15 @@
   fill: #afb1b8;
   transition: fill 250ms $cubic;
 }
+
+.footer-icon {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon > svg {
+  fill: $main-white-color;
+}
+
+.footer-icons > li:not(:last-child) {
+  margin-right: 10px;
+}
